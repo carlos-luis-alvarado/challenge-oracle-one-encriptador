@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+img{
+    max-width: 100%;
+}
+
+.logo{
+    width: 20px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+textarea{
+    background-color: #F3F5FC;
+    border: none;
+    width: 100%;
+    height: 65vh;
+    color: #0A3871;
+    font-size: 32px;
+    resize: none;
+}
+textarea:focus{
+    border: none;
+}
+
+
+.main{
+    margin: 20px;
+}
+.imagen-mun{
+    display: none;
+}
+.salida-texto{
+    width: 85%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .main{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 20px;
+        margin-left: 100px;
+    }
+    .ingreso-texto{
+        padding: 20px;
+        width: 60%;
+        height: 80vh;
+        align-items: center;
+    }
+    .salida-texto{
+        padding: 20px;
+        height: 80vh;
+        margin: auto;
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .imagen-mun{
+        display: block;
+    }
+}
+
+
+.ingreso-texto--botones{
+    text-align: center;
+}
+.boton{
+    display: block;
+    width: 95%;
+    margin: 5px;
+    margin: 10px auto;
+    /* width: 40%; */
+    height: 60px;
+    border-radius: 20px;
+    background-color: #0A3871;
+    font-size: 16px;
+    color: #FFFFFF;
+    border: 1px solid #0A3871;
+
+}
+@media (min-width: 390px) {
+  
+    .boton{
+        display: inline-block;
+        width: 40%; 
+        height: 60px;
+        margin: 5px;
+        
+    }
+ 
+  
+}
+
+
+.boton-copiar{
+    background-color: #FFFFFF;
+    border: 2px solid #0A3871;
+    color: #0A3871;
+    width: 100%;
+}
+
+
+button:hover{
+    cursor: pointer;
+}
