@@ -121,6 +121,20 @@ boton_copiar.addEventListener('click', (e) => {
 })
 
 window.addEventListener('resize', () => {
-    colocarImagen()
+    if(textarea_entrada.value===''){
+        colocarImagen()
+    }
 
+
+})
+
+let textarea_entrada = document.querySelector('textarea');
+textarea_entrada.addEventListener('input',(e)=>{
+    console.log(e);
+    if(!(/[a-z]/.test(e.data))){
+        console.log('NO VALIDO');
+        e.target.value = e.target.value.slice(0,-1)
+        alert('Solo mayusculas y sin acentos')
+
+    }
 })
